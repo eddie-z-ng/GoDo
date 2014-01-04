@@ -1,1 +1,41 @@
-app.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>godo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+	<div class="godoapp border border-gray">
+
+		<div id="godoheader" class="gradient">
+			<div id="godologo"></div>
+		</div>
+		
+		<ul class="godo-filter-container border border-gray rounded-corners">
+			<li class="filter" id="filter-all">
+				<button class="filter-button gradient selected-filter">All <span class="filter-count"></span></button>
+			</li>
+			<li class="filter" id="filter-active">
+				<button class="filter-button gradient">Active <span class="filter-count"></span></button>
+			</li>
+			<li class="filter" id="filter-complete">
+				<button class="filter-button gradient">Complete <span class="filter-count"></span></button>
+			</li>
+		</ul>
+		
+		<div class="horizontal-divide"></div>
+		
+		<form id="inputForm">
+			<input type="text" placeholder="What needs to be done?" id="input-task" class="border border-gray rounded-corners"/>
+		</form>
+
+		<ul class="godolist">
+		</ul>
+	
+	</div>
+
+</body>
+</html>
