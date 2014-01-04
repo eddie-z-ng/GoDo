@@ -1,0 +1,26 @@
+Introduction:
+Your mission, should you choose to accept it, is to create a todo app based on our design, and to implement as many of the features listed below. 
+
+You may use jQuery, and a JavaScript MVC framework of your choice to architect this app. Please do not use a CSS frameworks, such as Bootstrap.
+
+We have also provided you with a sprite containing the logo, checkmark, delete button, and divider in the css folder. The font used for the text is Helvetica Nue.
+
+The final deliverable should be the app.html file along with all javascript and css files used. If you use a preprocessor, like CoffeeScript, Sass, or Less, please include the compiled output versions as well as the originals.
+
+Features:
+* Todos are sorted into 3 categories with item counts in the navigation (all, active, completed).
+* Clicking on a category should filter the ToDo view to only that category.
+* Todos are added by typing into the input and pressing the enter key.
+* Clicking the gray checkmark will change it to green, and put it into the completed category. Clicking the green checkmark does the opposite.
+* Double-click to edit todo. Double clicking should also set the cursor to the input field on the todo, where the user can then type. Hitting enter should set the todo and remove input focus on it.
+* Delete todos by hovering over and clicking X icon. The X Icon should only appear on hover, for both active and complete todos.
+* Deleting the text of a todo should delete the todo automatically.
+* If todos run past the original height of the app spec, simply make it grow out on the bottom
+* BONUS: Persistence using local storage
+
+Tips:
+* Think data first!
+* Start simple, and iterate.
+* Tackle it feature by feature.
+* Leave the hardest parts for last.
+* If you get stuck, skip it.

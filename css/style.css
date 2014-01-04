@@ -1,0 +1,240 @@
+html, body {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #262626;
+   height: 100%;
+}
+
+form {
+	margin: 0px;
+}
+
+.godoapp {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 350px;
+	background: #ddd;
+}
+
+#godoheader {
+	position: relative;
+	display: block;
+	margin: auto;
+	height: 40px;
+	
+	padding: 20px 20px;
+}
+
+#godologo {
+	display: block;
+	margin: auto;
+	
+	border: 20px 20px;
+	
+	left: 0px;
+	width: 93px;
+	height: 34px;
+	background:url(sprite.png) 0 0; 
+}
+
+.gradient {
+	background-image: -ms-linear-gradient(top, #fff 0%, #ddd 100%);
+	background-image: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+	background-image: -o-linear-gradient(top, #fff 0%, #ddd 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+	background-image: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
+	background-image: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+}
+
+/* Filters */
+.godo-filter-container {
+	padding: 0px;
+    margin: 0px 10px 10px 10px;
+    overflow: hidden;
+    height: 39px;
+}
+
+.godo-filter-container li {
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+}
+
+.filter-button {
+	padding: 0px;
+	width: 108px;
+	height: 100%;
+	border: none;
+}
+
+.filter-button:hover {
+	cursor: pointer;
+}
+#filter-all .filter-button  {
+	border-right: 2px solid #ccc !important;
+}
+
+#filter-active  .filter-button{
+	border-right: 2px solid #ccc !important;
+}
+
+#filter-complete  .filter-button{
+	width: 112px;
+	margin-left: -1px;
+}
+
+.selected-filter {
+	background: #ddd;
+}
+
+.selected-filter:hover {
+	cursor: default !important;
+}
+
+
+
+.hide-item {
+	display: none !important;
+}
+
+.horizontal-divide {
+	background: url(sprite.png) 0px -37px;
+	width: 330px;
+	height: 4px;
+	margin: auto;
+}
+
+
+/* Task Input */
+#inputForm {
+	display: block;
+	margin: 10px 25px 10px 10px;
+}
+
+#input-task {
+	width: 100%;
+	height: 30px;
+	padding: 10px 0px 10px 15px;
+	font-weight: 800;
+}
+
+
+/* Borders and corners */
+.border {
+    border: 1px solid;
+}
+
+.border-gray {
+    border-color: #ccc;
+}
+
+.no-border {
+    border: none;
+}
+
+.rounded-corners {
+    border-radius: 7px;
+}
+
+
+/* Task Items */
+.godolist {
+	list-style: none;
+	padding-left: 0;
+}
+
+.godolist li {
+	background: white;
+	height: 30px;
+	margin: 10px;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.button-container {
+	margin-top: -20px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+	float: left;
+	background: #bbb;
+}
+
+.check-task {
+	background: #bbb;
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+.completed {
+	background: #35BE2F
+}
+
+.checkMark {
+	width: 25px;
+	height: 25px;
+	background:url(sprite.png) -94px 0;
+	margin-left: 6px;
+}
+
+.task-text {
+	width: 250px;
+	margin-left: 50px;
+	margin-top: -20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-right:0px;
+	cursor: default;
+}
+
+.edit-task {
+	height: 39px;
+	width: 250px;
+	margin-left: 50px;
+	margin-top: -20px;
+	padding-bottom: 10px;
+}
+
+.edit-task-text {
+	/*height: 100%;*/
+	width: 230px;
+	margin-left: -10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	
+	font-family: inherit;
+	font-size: inherit;
+	border: none;
+}
+
+.delete-task {
+	position: relative;
+    height: 16px;
+    width: 16px;
+    float: right;
+    border: none;
+    margin-right: 15px;
+    margin-top: -30px;
+	background: none;
+}
+
+.godolist li:hover .delete-task {
+	background:url(sprite.png) -122px 0px;
+}
+
+/* Prevent double-click from selecting content */
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;   
+}
+
